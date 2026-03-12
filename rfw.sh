@@ -163,7 +163,7 @@ After=network.target
 Type=simple
 User=root
 Environment=RUST_LOG=info
-ExecStart=/root/rfw/rfw --iface $selected_interface --block-email --block-http --block-socks5 --block-fet-loose --block-wireguard --countries CN --xdp-mode skb
+ExecStart=/root/rfw/rfw --iface $selected_interface --block-email --block-http --block-socks5 --block-fet-strict --block-wireguard --countries CN --xdp-mode skb
 Restart=always
 RestartSec=5
 
